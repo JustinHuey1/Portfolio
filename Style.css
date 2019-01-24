@@ -43,11 +43,11 @@
     font-size:50px;
 }
 
-#i{
+#Balboa{
     width:50%;
 }
 
-#o{
+#codeNation{
     width:50%;
 }
 
@@ -56,25 +56,25 @@
     justify-content:center;
 }
 
-#a{
+#about{
     text-decoration: none;
     color:red;
     font-size:25px;
 }
 
-#b{
+#portfolio{
     text-decoration: none;
     color:blue;
     font-size:25px;
 }
 
-#c{
+#contact{
     text-decoration: none;
     color:green;
     font-size:25px;
 }
 
-#z{
+#name{
     font-size:25px;
     color: white;
 }
@@ -86,13 +86,13 @@
     width: 400px;
 
     position: fixed;
-    top: 50%;
+    top: 30%;
     left: 50%;
     margin-left: -200px;
 }
 
 #pA{
-    font-size : 25px;
+    font-size : 30px;
 }
 
 .pictures{
@@ -112,21 +112,26 @@
     width: 400px;
 
     position: fixed;
-    top: 50%;
+    top: 30%;
     left: 50%;
     margin-left: -200px;
+    
+    font-size: 30px;
+    
 }
 
 
 /*Contact*/
 
-.ci{
+.info{
     height: 200px;
     width: 400px;
 
     position: fixed;
-    top: 50%;
+    top: 30%;
     left: 50%;
     margin-top: 100px;
     margin-left: -200px;
+    
+    font-size: 29px;
 }
