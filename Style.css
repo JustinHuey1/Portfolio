@@ -93,6 +93,7 @@
 
 #pA{
     font-size : 30px;
+    margin-top: 75px;
 }
 
 .pictures{
@@ -115,6 +116,7 @@
     top: 30%;
     left: 50%;
     margin-left: -200px;
+    margin-top: 75px;
     
     font-size: 30px;
     
