@@ -110,34 +110,16 @@
 .Projects1{
     display:flex;
     flex-direction: row;
-    
-    height: 200px;
 
     position: fixed;
-    top: 30%;
-    left: 50%;
-    margin-left: -200px;
-    margin-top: 75px;
-    margin-bottom: 50px;
-    
-    font-size: 30px;
-    
+
 }
 
 .Projects2{
     display:flex;
     flex-direction:row;
-    
-    height: 200px;
 
     position: fixed;
-    top: 30%;
-    left: 50%;
-    margin-left: -200px;
-    margin-top: 75px;
-    margin-bottom: 50px;
-    
-    font-size: 30px;
     
 }
 
@@ -145,35 +127,32 @@
     display:flex;
     flex-direction:row;
     
-    height: 200px;
-
     position: fixed;
-    top: 30%;
-    left: 50%;
-    margin-left: -200px;
-    margin-top: 75px;
-    
-    font-size: 30px;
     
 }
 
 .first{
     width: 100%;
-    height: 250px;
+    height: 100px;
 }
 
 .second{
     width: 100%;
-    height: 250px;
+    height: 100px;
 }
 
 .third{
     width: 100%;
-    height: 250px;
+    height: 100px;
+}
+
+.ProjectsImg{
+    width: 25%;
 }
 
 .Projects{
-    width: 25%;
+    margin: 50px;
+    font-size: 25px;
 }
 /*Contact*/
 
