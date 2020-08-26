@@ -11,17 +11,27 @@
 }
 
 .headshot{
+    border-radius: 60%;
+    border:10px solid #60daaa;
+    animation: rainbow 5s linear infinite;
+
     width:20%;
-   
+    margin: 5%;
 }
+
+@keyframes rainbow {
+    0% { border-right-color: red; border-left-color: blue; border-top-color: green; border-bottom-color: yellow;}
+    33% { border-right-color: green; border-left-color: yellow; border-top-color: blue; border-bottom-color: red;}
+    66% { border-right-color: blue; border-left-color: red; border-top-color: yellow; border-bottom-color: green;}
+    99% { border-right-color: yellow; border-left-color: green; border-top-color: red; border-bottom-color: blue;}
+}
+
 .mid{
     background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
     color:black;
     display: flex;
     justify-content: center;
     font-size:50px;
-    margin-top:5px;
-    margin-bottom:5px;
 }
 .aboutme{
     border:1px solid black;   
