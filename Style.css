@@ -1,0 +1,44 @@
+body{
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+#top{
+    height: 20%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+#name{
+    text-decoration: underline;
+    position: absolute;
+}
+
+#headshot{
+    border-radius: 60%;
+    border:10px solid #60daaa;
+    animation: rainbow 5s linear infinite;
+
+    height: ;
+    width: 20%;
+    margin: 5%;
+}
+
+@keyframes rainbow {
+    0% { border-right-color: red; border-left-color: blue; border-top-color: green; border-bottom-color: yellow;}
+    33% { border-right-color: green; border-left-color: yellow; border-top-color: blue; border-bottom-color: red;}
+    66% { border-right-color: blue; border-left-color: red; border-top-color: yellow; border-bottom-color: green;}
+    99% { border-right-color: yellow; border-left-color: green; border-top-color: red; border-bottom-color: blue;}
+}
+
+.contact{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.logo{
+    height: 50%;
+    width: 50%;
+}
