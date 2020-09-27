@@ -1,6 +1,15 @@
 body{
+    background-color: black;
+}
+
+#bg1{
     background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
 }
+
+#bg2{
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #884bbf 50%, #2B86C5 100%);
+} 
 
 #top{
     height: 35px;
@@ -72,7 +81,10 @@ body{
 
 #line{
     width: 100%;
-    border: 5px solid black;
+    height: 25px;
+    
+    background-color: #A9C9FF;
+    background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
 }
 
 #title{
