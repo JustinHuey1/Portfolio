@@ -3,7 +3,7 @@ body{
 }
 
 #top{
-    height: 20%;
+    height: 35px;
     width: 100%;
 
     display: flex;
@@ -30,6 +30,17 @@ body{
 
     width: 40%;
     margin-right: 30%;
+    margin-top: 4%;
+}
+
+#header{
+    position: absolute;
+    
+    font-size: 15px;
+
+    width: 40%;
+    margin-right: 30%;
+    margin-top: 18%;
 }
 
 #headshot{
@@ -37,8 +48,8 @@ body{
     border:10px solid #60daaa;
     animation: rainbow 5s linear infinite;
 
-    height: 50%;
-    width: 20%;
+    height: 200px;
+    width: 15%;
     margin-left: 40%;
 }
 
@@ -50,13 +61,11 @@ body{
 }
 
 .contact{
-    display: flex;
     text-align: center;
-    justify-content: center;
+
 }
 
-.logo{
-    height: 50%;
-    width: 35%;
-
+.social{
+    height: 50px;
+    width: 10%;
 }
