@@ -87,6 +87,8 @@ body{
 }
 
 .projects{
+    border: 2px solid yellow;
+
     height: 75%;
     width: 80%;
 
