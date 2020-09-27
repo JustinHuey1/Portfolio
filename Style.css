@@ -12,7 +12,24 @@ body{
 
 #name{
     text-decoration: underline;
+}
+
+#middle{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+}
+
+#about{
     position: absolute;
+    flex-wrap: wrap;
+    
+    font-family: 'Bangers', cursive;
+    font-size: 25px;
+
+    width: 40%;
+    margin-right: 30%;
 }
 
 #headshot{
@@ -20,9 +37,9 @@ body{
     border:10px solid #60daaa;
     animation: rainbow 5s linear infinite;
 
-    height: ;
+    height: 50%;
     width: 20%;
-    margin: 5%;
+    margin-left: 40%;
 }
 
 @keyframes rainbow {
@@ -40,5 +57,6 @@ body{
 
 .logo{
     height: 50%;
-    width: 50%;
+    width: 35%;
+
 }
