@@ -100,6 +100,7 @@ body{
 
 .projects{
     border: 2px solid yellow;
+    border-radius: var(--border-width);
 
     height: 75%;
     width: 80%;
@@ -110,12 +111,33 @@ body{
 }
 
 .containers :hover{
-    /* height: 100%;
-    width: 100%; */
-    
-    /* margin-top: 4%;
-    margin-bottom: 4%; */
-    border-width: 10px;
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(
+      60deg,
+      hsl(224, 85%, 66%),
+      hsl(269, 85%, 66%),
+      hsl(314, 85%, 66%),
+      hsl(359, 85%, 66%),
+      hsl(44, 85%, 66%),
+      hsl(89, 85%, 66%),
+      hsl(134, 85%, 66%),
+      hsl(179, 85%, 66%)
+    );
+    /* background-size: 300% 300%; */
+    border-radius: calc(2 * var(--border-width));
+    animation: moveGradient 4s alternate infinite;
+  }
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 .containers{
