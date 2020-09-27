@@ -1,45 +1,51 @@
-@keyframes rotate {
-	100% {
-		transform: rotate(1turn);
-	}
+body{
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
-body::before {
-		content: '';
-		position: absolute;
-		z-index: -2;
-		left: -50%;
-		top: -50%;
-		width: 200%;
-		height: 200%;
-		background-color: #399953;
-		background-repeat: no-repeat;
-		background-size: 50% 50%, 50% 50%;
-		background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-		background-image: linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
-		animation: rotate 4s linear infinite;
-	}
-	
-	body::after {
-		content: '';
-		position: absolute;
-		z-index: -1;
-		left: 6px;
-		top: 6px;
-		width: calc(100% - 12px);
-		height: calc(100% - 12px);
-		background: white;
-		border-radius: 5px;
-	}
+.body{
+  --borderWidth: 3px;
+  background: #1D1F20;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.body:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 
 #bg1{
     background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    max-height: 40%;
 }
 
 #bg2{
     background-color: #FF3CAC;
     background-image: linear-gradient(225deg, #FF3CAC 0%, #884bbf 50%, #2B86C5 100%);
+    max-height: 60%;
 } 
 
 #top{
@@ -158,3 +164,99 @@ body::before {
 }
 
 	
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+#name {
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  font-family: "Sacramento", cursive;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#name {
+  background: #000;
+  border: none;
+  transform: translate(-50%,-50%);
+  border-radius: 3px;
+  padding: 1.8em 1.6em;
+
+}
+  #name:focus, #name:active {
+    outline: none;
+  }
+  #name:before, #name:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0; 
+    z-index: -1;
+    border-radius: inherit;
+    background: inherit;
+  }
+  #name:before {
+    background: linear-gradient(90deg, #0ebeff, #ffdd40, #ae63e4, #47cf73, #0ebeff, #ffdd40, #ae63e4, #47cf73);
+    background-size: 400% 400%;
+  }
+  #name:after {
+    margin: 3px;
+  }
+  #name:before, #name:focus:before {
+    animation: rainbow-border 1.5s linear infinite
+  }
+
+@keyframes rainbow-border {
+  0% { background-position: 0% 50% }
+  100% { background-position: 200% 50% }
+}
