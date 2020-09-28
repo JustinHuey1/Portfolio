@@ -58,6 +58,7 @@ body{
 
 #name{
     text-decoration: underline;
+    height: 20%;
 }
 
 #middle{
@@ -223,18 +224,18 @@ body{
   padding: 0;
 }
 
-#name {
+#top {
   background: #000;
   border: none;
-  transform: translate(-50%,-50%);
+  transform: translate(-5%,-5%);
   border-radius: 3px;
-  padding: 1.8em 1.6em;
+  padding: 1em 1em;
 
 }
-  #name:focus, #name:active {
+  #top:focus, #top:active {
     outline: none;
   }
-  #name:before, #name:after {
+  #top:before, #top:after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -245,14 +246,14 @@ body{
     border-radius: inherit;
     background: inherit;
   }
-  #name:before {
+  #top:before {
     background: linear-gradient(90deg, #0ebeff, #ffdd40, #ae63e4, #47cf73, #0ebeff, #ffdd40, #ae63e4, #47cf73);
-    background-size: 400% 400%;
+    background-size: 200% 200%;
   }
-  #name:after {
+  #top:after {
     margin: 3px;
   }
-  #name:before, #name:focus:before {
+  #top:before, #top:focus:before {
     animation: rainbow-border 1.5s linear infinite
   }
 
@@ -260,6 +261,7 @@ body{
   0% { background-position: 0% 50% }
   100% { background-position: 200% 50% }
 }
+
 
 .seperator-wrapper {
   width: 100%;  
