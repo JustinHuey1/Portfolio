@@ -56,9 +56,18 @@ body{
     justify-content: center;
 }
 
+#bord{
+    justify-content: center;
+    width: 30%;
+    height: 60%;
+}
+
 #name{
+    position: absolute;
+    justify-content: center;
     text-decoration: underline;
-    height: 20%;
+    margin-right: 3%;
+    z-index: 1;
 }
 
 #middle{
@@ -224,7 +233,7 @@ body{
   padding: 0;
 }
 
-#top {
+#bord {
   background: #000;
   border: none;
   transform: translate(-5%,-5%);
@@ -232,10 +241,10 @@ body{
   padding: 1em 1em;
 
 }
-  #top:focus, #top:active {
+  #bord:focus, #bord:active {
     outline: none;
   }
-  #top:before, #top:after {
+  #bord:before, #bord:after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -246,14 +255,14 @@ body{
     border-radius: inherit;
     background: inherit;
   }
-  #top:before {
+  #bord:before {
     background: linear-gradient(90deg, #0ebeff, #ffdd40, #ae63e4, #47cf73, #0ebeff, #ffdd40, #ae63e4, #47cf73);
     background-size: 200% 200%;
   }
-  #top:after {
+  #bord:after {
     margin: 3px;
   }
-  #top:before, #top:focus:before {
+  #bord:before, #bord:focus:before {
     animation: rainbow-border 1.5s linear infinite
   }
 
