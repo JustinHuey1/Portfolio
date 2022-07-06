@@ -138,6 +138,7 @@ body{
     display: flex;
     justify-content: center;
     text-decoration: underline;
+    margin: 1rem;
 }
 
 .portfolio{
